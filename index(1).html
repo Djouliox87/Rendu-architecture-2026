@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<script>
+    window.addEventListener("scroll", function() {
+
+        const navbar = document.querySelector("header");
+
+        if (window.scrollY > 100) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+
+    });
+    window.addEventListener("scroll", function() {
+        const container =document.querySelector(".container2");
+        if(window.scrollY > 200) {
+            container.classList.add("scrolle");
+        } else {
+            container.classList.remove("scrolle");
+        }
+    });
+</script>
+<body>
+    <header>
+        <a href=""><img src="/asset/logo.png" alt="" width="259px" height="169px"></a>
+        <nav>
+            <a href="">Nos prestation</a>
+            <a href="">Projets</a>
+            <a href="">Temoignages</a>
+            <a href="">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Clémence Rivière Studio</h1>
+                <h2>Révéler le potentiel de chaque espace</h2>
+                <div class="bouton">
+                <a class="rdv" href="">Prendre rendez-vous</a>
+                <a class="réalisation" href="">Voir mes réalisations</a>
+            </div>
+            </div>
+        </section>
+        <section class="promesse">
+            <h2 class="bien-être">Une approche centrée sur vos besoins et votre bien-être</h2>
+            <div class="container2">
+                <ul class="liste1">
+                    <li>
+                        Une approche humaine et créative, centrée sur vos usages et vos envies
+                    </li><br>
+                    <li>
+                        Des matériaux durables et des fournisseurs locaux privilégiés
+                    </li><br>
+                    <li>
+                        Une expertise esthétique alliée à une rigueur technique
+                    </li><br>
+                    <li>
+                        Un accompagnement complet, du croquis à la réception du chantier
+                    </li>
+                </ul>
+                <img src="/asset/promesses-pexels-shkrabaanthony-6322392.jpg" alt="" width="399px" height="599px">
+            </div>
+        </section>
+        <section class="prestation">
+            <h2 class="titre-prestation">Nos prestations</h2>
+            <div class="container3">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

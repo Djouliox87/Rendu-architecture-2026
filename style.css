@@ -2,8 +2,7 @@ body {
   margin: 0;
 }
 header {
-  display: flex;
-    position: absolute;   
+  display: flex;   
     position: fixed;
     background-size: cover;
     top: 0;
@@ -11,8 +10,9 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 5px;
-    background-color: transparent;   
+    padding: 1px 5px;
+    background-color: transparent;  
+    transition: background-color 0.3s ease
 }
 
 nav {
@@ -37,14 +37,16 @@ nav a {
   background-position: center;
 }
 .container {
-    padding-top: 30px;
+    padding-top: 100px;
   height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: apparition 1.5s ease-out;
 }
 h1 {
+  
   margin: 0px;
   padding: 0px;
   color: #ffeeea;
@@ -60,6 +62,20 @@ h2 {
   color: #fbcdc0;
   font-size: 32px;
   margin-bottom: 30px;
+}
+
+@keyframes apparition {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 .bouton a {
@@ -81,6 +97,7 @@ h2 {
   font-size: 15px;
 }
 .réalisation{
+  background-color: #a456415f;
     border: solid;
     font-family: "Poppins", sans-serif;
     border-color:#A45741 ;
@@ -102,6 +119,21 @@ h2 {
 display: flex;
 justify-content: space-around;
 }
+.container2.scrolle{
+   animation: slide-in 3s;
+}
+
+ @keyframes slide-in {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .liste1{
     margin-top: 30px;
@@ -115,5 +147,8 @@ justify-content: space-around;
 }
 li{
     padding-top: 30px;
+}
+header.scrolled {
+  background-color: #ffffff;
 }
 
