@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+    position: absolute;   
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: transparent;   
+}
+
+nav {
+  display: flex;
+  margin-left: 200px;
+  gap: 200px;
+}
+nav a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  color: #47241a;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("asset/unsplash_fZHP8uq6WhQ.png");
+  background-size: cover;
+  background-position: center;
+}
+.container {
+    padding-top: 30px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  margin: 0px;
+  padding: 0px;
+  color: #ffeeea;
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-size: 80px;
+}
+h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Baloo 2", sans-serif;
+  color: #fbcdc0;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.bouton a {
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+  border-radius: 20px;
+}
+.bouton {
+  margin: 60px;
+  display: flex;
+  gap: 60px;
+}
+.rdv {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffeeea;
+  background-color: #47241a;
+  font-size: 15px;
+}
+.réalisation{
+    border: solid;
+    font-family: "Poppins", sans-serif;
+    border-color:#A45741 ;
+    color: #ffeeea;
+    font-size: 15px;
+    font-weight: bold;
+}
+.rdv:hover{
+    background-color: #3B1E15;
+}
+.réalisation:hover{
+    background-color: #A45741;
+}
+.promesse{
+    background-color: #fcf0ed;
+}
+.container2{
+    padding-top: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.liste1{
+    margin-top: 30px;
+    font-size: 35px;
+}
+.bien-être{
+    color: #3B1E15;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+li{
+    padding-top: 30px;
+}
+
