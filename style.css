@@ -12,7 +12,8 @@ header {
     align-items: center;
     padding: 1px 5px;
     background-color: transparent;  
-    transition: background-color 0.3s ease
+    transition: background-color 0.3s ease;
+    z-index: 10;
 }
 
 nav {
@@ -60,7 +61,7 @@ h2 {
   padding: 0px;
   font-family: "Baloo 2", sans-serif;
   color: #fbcdc0;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
@@ -112,7 +113,8 @@ h2 {
     background-color: #A45741;
 }
 .promesse{
-    background-color: #fcf0ed;
+    background-color: #fcf4f3;
+    padding-bottom: 100px;
 }
 .container2{
     padding-top: 20px;
@@ -140,6 +142,7 @@ justify-content: space-around;
     font-size: 35px;
 }
 .bien-être{
+  font-size: 40px;
     color: #3B1E15;
     padding-top: 50px;
     display: flex;
@@ -152,3 +155,126 @@ header.scrolled {
   background-color: #ffffff;
 }
 
+.prestation{
+  background-color: #FBCDC0;
+  height: 1550px;
+}
+.titre-prestation{
+  color: #3B1E15;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  font-size: 40px;
+}
+
+.Rénovation {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: space-evenly;
+}
+
+.texte {
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  font-size: 30px;
+  width: 500px;
+  background-color: #E08C74;
+  padding: 5px 10px 5px 10px;
+  height: 350px;
+}
+.img-renovation{
+  box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.3);
+}
+h3{
+  color: #ffeeea;
+}
+.inverse {
+  flex-direction: row-reverse;
+}
+.inverse .texte{
+  background-color: #A45741;
+}
+.prestation .Rénovation {
+  margin-bottom: 60px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* une image par slide */
+.slide:nth-child(1) { background-image: url("asset/im3rd-media-FJZtZldA-uE-unsplash.jpg"); }
+.slide:nth-child(2) { background-image: url("asset/blanc2.png"); }
+.slide:nth-child(3) { background-image: url("/asset/hakim-menikh-lcoAS3tYlx4-unsplash.jpg"); }
+.slide:nth-child(4) { background-image: url("asset/tem-rysh-F6-U5fGAOik-unsplash.jpg"); }
+
+/* texte sur l'image */
+.legende {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 100px 40px 60px;
+  color: #ffeeea;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+}
+.legende h3 {
+  margin: 0 0 8px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 32px;
+}
+.legende p {
+  margin: 0;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+
+.fleche {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.gauche { left: 20px; }
+.droite { right: 20px; }
+
+.points {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.point.actif {
+  background: #fff;
+}
