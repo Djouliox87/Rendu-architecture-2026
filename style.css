@@ -225,24 +225,29 @@ h3{
 
 /* texte sur l'image */
 .legende {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 100px 40px 60px;
-  color: #ffeeea;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+  color: #7A3F2E;
 }
 .legende h3 {
-  margin: 0 0 8px;
+  color: #7A3F2E;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.696);
+  margin-left: 70px;
   font-family: "Baloo 2", sans-serif;
   font-size: 32px;
 }
 .legende p {
-  margin: 0;
+  background-color: rgba(255, 255, 255, 0.603);
+   margin-left: 70px;
+   margin-bottom: 100px;
   max-width: 500px;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 
@@ -281,58 +286,199 @@ h3{
 .Projets{
   background-color: #fcf4f3;
 }
-.commentair{
-  background-color: #fcf4f3;
-  height: 2000px;
+.temoignages {
+  background-color: #FBCDC0;
+  padding: 80px 40px 100px;
 }
-.container4{
-display: flex;
 
-padding-top: 50px;
-}
-.textes2{
-margin-left: 300px;
-  width: 300px;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
+/* bloc note */
+.note-globale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
   padding: 20px;
-  background-color: #603124;
+  background-color: #ffffff;
   border-radius: 20px;
 }
-.textes2 p{
-  color: #FBCDC0;
-}
-.texte-flex .textes2{
-  background-color: #7A3F2E;
-
-}
-.texte3{
-  margin-left: 0px;
-  width: 300px;
-  font-size: 20px;
+.note {
   font-family: "Poppins", sans-serif;
-  padding: 20px;
-  background-color: #603124;
-  border-radius: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #3B1E15;
 }
-.texte-flex{
-  gap: 100px;
+.etoiles {
+  color: #FBBC04;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+/* cartes */
+.avis-liste {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.texte4{
-   margin-left: 500px;
-  width: 300px;
-  font-size: 20px;
+.avis {
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #e5d3ce;
+  border-radius: 30px;
   font-family: "Poppins", sans-serif;
-  padding: 20px;
-  background-color: #603124;
+}
+.avis-entete {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.avatar {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #E08C74;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+}
+.avis:nth-child(2) .avatar { background-color: #A45741; }
+.avis:nth-child(3) .avatar { background-color: #47241a; }
+
+.avis-nom {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3B1E15;
+}
+.avis-info {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #999;
+}
+.avis .etoiles {
+  font-size: 20px;
+}
+.avis-texte {
+  margin: 15px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #222;
+}
+.footer {
+  background-color: #3B1E15;
+  color: #ffeeea;
+  font-family: "Poppins", sans-serif;
+  padding: 70px 40px 0;
+}
+.footer-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer-colonne {
+  flex: 1 1 250px;
+}
+.footer-nom {
+  margin: 0 0 10px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.footer-slogan {
+  margin: 0 0 25px;
+  color: #fbcdc0;
+}
+.footer h3 {
+  margin: 0 0 20px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 22px;
+}
+
+/* listes */
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer li {
+  padding-top: 0;            /* annule le li { padding-top: 30px } global */
+  margin-bottom: 12px;
+}
+.footer li i {
+  width: 22px;
+  color: #E08C74;
+}
+.footer a {
+  color: #ffeeea;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #E08C74;
+}
+
+/* réseaux sociaux */
+.reseaux {
+  display: flex;
+  gap: 15px;
+}
+.reseaux a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #A45741;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.reseaux a:hover {
+  background-color: #A45741;
+  color: #ffeeea;
+}
+
+/* bouton rendez-vous */
+.footer a.footer-rdv {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 28px;
   border-radius: 20px;
+  background-color: #E08C74;
+  color: #3B1E15;
+  font-weight: 600;
 }
-.textes h2{
-  margin-left: 400px;
+.footer a.footer-rdv:hover {
+  background-color: #fbcdc0;
+  color: #3B1E15;
 }
-.blanc{
-  margin-top: 100px;
-  margin-left: 40px;
+
+/* barre du bas */
+.footer-bas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1100px;
+  margin: 50px auto 0;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 238, 234, 0.2);
+  font-size: 14px;
+}
+.footer-bas p {
+  margin: 0;
 }

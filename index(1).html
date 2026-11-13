@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +19,9 @@
         ><img src="/asset/logo.png" alt="" width="259px" height="169px"
       /></a>
       <nav>
-        <a href="">Nos prestations</a>
-        <a href="">Projets</a>
-        <a href="">Temoignages</a>
+        <a href="#Nos prestations">Nos prestations</a>
+        <a href="#Projets">Projets</a>
+        <a href="#temoignages">Temoignages</a>
         <a href="">Contact</a>
       </nav>
     </header>
@@ -64,7 +65,7 @@
           />
         </div>
       </section>
-      <section class="prestation">
+      <section class="prestation" id="Nos prestations">
         <h2 class="titre-prestation">Nos prestations</h2>
         <div class="Rénovation">
           <div class="texte">
@@ -115,7 +116,7 @@
           />
         </div>
       </section>
-      <section class="Projets">
+      <section class="Projets" id="Projets">
         <h2 class="titre-prestation">Projets</h2>
         <section class="slider">
           <div class="slides">
@@ -164,36 +165,121 @@
           <div class="points"></div>
         </section>
       </section>
-      <section class="commentair">
-        <div class="container4">
-            <img class="blanc" src="/asset/jean-luc-benazet-oOvzE2L-n1A-unsplash.jpg" alt=""  width="399px"
-            height="599px">
-            <div class="textes">
-              <h2>Témoignages de nos clients</h2>
-              <div class="texte-flex">
-                <div class="textes2">
-                <h3>
-                  Mathilde
-                </h3>
-                <h4> Rénovation d'appartement</h4>
-                <p> Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat est à la fois pratique et sublime.</p>
-              </div>
-              <div class="texte3">
-                  <h3>Olivier</h3>
-                  <h4>Aménagement de bureau</h4>
-                  <p> Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont parfaits et l’espace respire.</p>
-              </div>
-                <div class="texte4">
-                <h3>Sonia</h3>
-                <h4>Décoration intérieure</h4>
-                <p>J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et des matières nobles. Je recommande à 100 %.</p>
-              </div>
-              </div>
-            </div>
-          </div>
+      <section class="temoignages" id="temoignages">
+  <h2 class="titre-prestation">Témoignages</h2>
+
+  <div class="note-globale">
+    <span class="note">5,0</span>
+    <div class="etoiles" role="img" aria-label="Note moyenne : 5 sur 5">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+  <div class="avis-liste">
+    <div class="avis">
+      <div class="avis-entete">
+        <div class="avatar">M</div>
+        <div>
+          <p class="avis-nom">Mathilde</p>
+          <p class="avis-info">Rénovation d'appartement</p>
         </div>
-      </section>
+      </div>
+      <div class="etoiles" role="img" aria-label="Note : 5 sur 5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="avis-texte">
+        Clémence a su repenser notre espace avec beaucoup d’intelligence et de goût. Le résultat est à la fois pratique et sublime.
+      </p>
+    </div>
+
+    <div class="avis">
+      <div class="avis-entete">
+        <div class="avatar">T</div>
+        <div>
+          <p class="avis-nom"> Olivier</p>
+          <p class="avis-info">Aménagement de bureau</p>
+        </div>
+      </div>
+      <div class="etoiles" role="img" aria-label="Note : 5 sur 5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="avis-texte">
+        Un vrai sens du détail et une belle écoute de nos besoins. Les meubles sur mesure sont parfaits et l’espace respire.
+      </p>
+    </div>
+
+    <div class="avis">
+      <div class="avis-entete">
+        <div class="avatar">S</div>
+        <div>
+          <p class="avis-nom">Sonia</p>
+          <p class="avis-info">Décoration intérieure</p>
+        </div>
+      </div>
+      <div class="etoiles" role="img" aria-label="Note : 5 sur 5">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <p class="avis-texte">
+        J’adore la nouvelle ambiance de mon salon : couleurs apaisantes, lumière retravaillée, et des matières nobles. Je recommande à 100 %.
+      </p>
+    </div>
+  </div>
+</section>
     </main>
+    <footer class="footer" id="contact">
+  <div class="footer-contenu">
+    <div class="footer-colonne">
+      <p class="footer-nom">Clémence Rivière Studio</p>
+      <p class="footer-slogan">Révéler le potentiel de chaque espace</p>
+      <div class="reseaux">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-colonne">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#prestations">Nos prestations</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-colonne">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fa-solid fa-envelope"></i><a href="mailto:contact@exemple.fr">djouliog@gmail.com</a></li>
+        <li><i class="fa-solid fa-phone"></i><a href="tel:+33600000000">06 41 34 90 40</a></li>
+        <li><i class="fa-solid fa-location-dot"></i>Lyon, France</li>
+      </ul>
+      <a class="footer-rdv" href="#">Prendre rendez-vous</a>
+    </div>
+  </div>
+
+  <div class="footer-bas">
+    <p>© 2026 Clémence Rivière Studio. Tous droits réservés.</p>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+</footer> 
     <script src="app.js"></script>
   </body>
 </html>
